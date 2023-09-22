@@ -16,6 +16,7 @@ namespace BoGodt.Model
         protected string _workerType { get; set; }
         #endregion
 
+
         public Worker(string workerFirstName, string workerLastName, string workerType)
         {
             _workerFirstName = workerFirstName;
@@ -23,9 +24,9 @@ namespace BoGodt.Model
             _workerType = workerType;
         }
 
-        public void WorkerData()
+        public void PrintInfo()
         {
-            view.WorkerOutput(_workerFirstName, _workerLastName, _workerType);
+            view.WorkerOutputGUI(_workerFirstName, _workerLastName, _workerType);
         }
     }
 }

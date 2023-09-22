@@ -46,6 +46,7 @@
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\Apartment.cs" />
     <Compile Include="Model\ApartmentType.cs" />
+    <Compile Include="Model\List.cs" />
     <Compile Include="Model\Requirements.cs" />
     <Compile Include="Model\Payment.cs" />
     <Compile Include="Model\Worker.cs" />
