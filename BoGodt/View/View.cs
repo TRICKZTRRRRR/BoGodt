@@ -9,7 +9,10 @@ namespace BoGodt.View
     internal class View
     {
         #region View
-
+        public void ChooseSection(string userChoose)
+        {
+            Console.WriteLine();
+        }
         #endregion
     }
 }
