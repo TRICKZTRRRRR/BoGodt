@@ -9,9 +9,10 @@ namespace BoGodt.View
     internal class View
     {
         #region View
-        public void ChooseSection(string userChoose)
+        public void WorkerOutput(string workerFirstName, string workerLastName, string workerType)
         {
-            Console.WriteLine();
+            Console.WriteLine($"Name: {workerFirstName} {workerLastName}\n" +
+                $"Work: {workerType}");
         }
         #endregion
     }

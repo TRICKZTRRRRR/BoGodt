@@ -8,6 +8,7 @@ namespace BoGodt.Model
 {
     internal class Apartment
     {
+        #region Variables
         protected bool _furnished;
         protected bool _sharingFriendly;
         protected bool _petsAllowed;
@@ -20,7 +21,8 @@ namespace BoGodt.Model
         protected bool _washingMaching;
         protected bool _chargingStand;
         protected bool _dryer;
-        protected bool _energyLabel;
+        protected char _energyLabel;
+        #endregion
 
         public bool Furnished { get { return _furnished; } set { _furnished = value; } }
         public bool SharingFriendly { get {  return _sharingFriendly; } set { _sharingFriendly = value; } }
@@ -34,6 +36,6 @@ namespace BoGodt.Model
         public bool WashingMachine { get { return _washingMaching; } set { _washingMaching = value; } }
         public bool ChargingStand {  get { return _chargingStand; } set { _chargingStand = value; } }
         public bool Dryer { get { return _dryer; } set { _dryer = value; } }
-        public bool EnergyLabel { get { return _energyLabel; } set { _energyLabel = value; } }
+        public char EnergyLabel { get { return _energyLabel; } set { _energyLabel = value; } }
     }
 }
