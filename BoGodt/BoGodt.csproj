@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Model\1RoomApartment.cs" />
+    <Compile Include="Model\2RoomApartment.cs" />
+    <Compile Include="Model\3RoomApartment.cs" />
+    <Compile Include="Model\4RoomApartment.cs" />
+    <Compile Include="Model\5RoomApartment.cs" />
     <Compile Include="Model\Apartment.cs" />
-    <Compile Include="Model\ApartmentType.cs" />
-    <Compile Include="Model\List.cs" />
-    <Compile Include="Model\Requirements.cs" />
+    <Compile Include="Model\Requirement.cs" />
     <Compile Include="Model\Payment.cs" />
     <Compile Include="Model\Worker.cs" />
     <Compile Include="Program.cs" />

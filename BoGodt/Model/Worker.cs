@@ -11,22 +11,22 @@ namespace BoGodt.Model
         View.View view = new View.View();
 
         #region Variables
-        protected string _workerFirstName {  get; set; }
-        protected string _workerLastName { get; set; }
-        protected string _workerType { get; set; }
+        protected string WorkerFirstName {  get; set; }
+        protected string WorkerLastName { get; set; }
+        protected string WorkerType { get; set; }
         #endregion
 
 
         public Worker(string workerFirstName, string workerLastName, string workerType)
         {
-            _workerFirstName = workerFirstName;
-            _workerLastName = workerLastName;
-            _workerType = workerType;
+            WorkerFirstName = workerFirstName;
+            WorkerLastName = workerLastName;
+            WorkerType = workerType;
         }
 
         public void PrintInfo()
         {
-            view.WorkerOutputGUI(_workerFirstName, _workerLastName, _workerType);
+            view.WorkerOutputGUI(WorkerFirstName, WorkerLastName, WorkerType);
         }
     }
 }

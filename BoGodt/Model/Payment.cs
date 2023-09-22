@@ -11,18 +11,18 @@ namespace BoGodt.Model
         View.View view = new View.View();
 
         #region Variables
-        protected int _workerPayment {  get; set; }
+        protected int WorkerPayment {  get; set; }
         #endregion
 
         public Payment(string workerFirstName, string workerLastName, string workerType, int workerPayment) : base(workerFirstName, workerLastName, workerType)
         {
-            _workerPayment = workerPayment;
+            WorkerPayment = workerPayment;
         }
 
         public new void PrintInfo()
         {
             base.PrintInfo();
-            view.WorkerPaymentGUI(_workerPayment);
+            view.WorkerPaymentGUI(WorkerPayment);
         }
     }
 }

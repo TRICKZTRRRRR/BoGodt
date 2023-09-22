@@ -1,41 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BoGodt.Model
 {
-    internal class Apartment
+    abstract class Apartment
     {
         #region Variables
-        protected bool _furnished;
-        protected bool _sharingFriendly;
-        protected bool _petsAllowed;
-        protected bool _elevator;
-        protected bool _seniorFriendly;
-        protected bool _onlyForStudents;
-        protected bool _balconyOrTerrace;
-        protected bool _parking;
-        protected bool _dishwasher;
-        protected bool _washingMaching;
-        protected bool _chargingStand;
-        protected bool _dryer;
-        protected char _energyLabel;
+        protected bool Furnished {  get; set; }
+        protected bool SharingFriendly { get; set; }
+        protected bool PetsAllowed { get; set; }
+        protected bool Elevator { get; set; }
+        protected bool SeniorFriendly { get; set; }
+        protected bool OnlyForStudents { get; set; }
+        protected bool BalconyOrTerrace { get; set; }
+        protected bool Parking { get; set; }
+        protected bool Dishwasher { get; set; }
+        protected bool WashingMaching { get; set; }
+        protected bool ChargingStand { get; set; }
+        protected bool Dryer { get; set; }
+        protected char EnergyLabel { get; set; }
         #endregion
 
-        public bool Furnished { get { return _furnished; } set { _furnished = value; } }
-        public bool SharingFriendly { get {  return _sharingFriendly; } set { _sharingFriendly = value; } }
-        public bool PetsAllowed { get { return _petsAllowed; } set { _petsAllowed = value; } }
-        public bool Elevator { get { return _elevator; } set { _elevator = value; } }
-        public bool SeniorFriendly { get { return _seniorFriendly; } set { _seniorFriendly = value; } }
-        public bool OnlyForStudents {  get { return _onlyForStudents; } set { _onlyForStudents = value;} }
-        public bool BalconyOrTerrace { get {  return _balconyOrTerrace;} set { _balconyOrTerrace = value; } }
-        public bool Parking { get { return _parking; } set { _parking = value; } }
-        public bool Dishwasher { get { return _dishwasher;} set { _dishwasher = value;} }
-        public bool WashingMachine { get { return _washingMaching; } set { _washingMaching = value; } }
-        public bool ChargingStand {  get { return _chargingStand; } set { _chargingStand = value; } }
-        public bool Dryer { get { return _dryer; } set { _dryer = value; } }
-        public char EnergyLabel { get { return _energyLabel; } set { _energyLabel = value; } }
+        public Apartment(bool furnishes, bool sharingFriendly, bool petsAllowed, bool elevator, bool seniorFriendly, bool onlyForStudents, bool balconyOrTerrance, bool parking, bool dishwasher, bool washingMachine, bool chargingStand, bool dryer, char energyLabel)
+        {
+            Furnished = furnishes;
+            SharingFriendly = sharingFriendly;
+            PetsAllowed = petsAllowed;
+            Elevator = elevator;
+            SeniorFriendly = seniorFriendly;
+            OnlyForStudents = onlyForStudents;
+            BalconyOrTerrace = balconyOrTerrance;
+            Parking = parking;
+            Dishwasher = dishwasher;
+            WashingMaching = washingMachine;
+            ChargingStand = chargingStand;
+            Dryer = dryer;
+            EnergyLabel = energyLabel;
+        }
     }
 }
